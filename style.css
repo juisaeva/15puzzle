@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.puzzle__btn {
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+    padding: 6px 15px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.puzzle__btn:not(:last-of-type) {
+    margin-right: 5px;
+}
+
+.btn--green {
+    background-color: rgb(153, 125, 209);
+}
+
+.btn--green:hover,
+.btn--green:focus,
+.btn--green:active {
+    background-color: rgb(112, 81, 174);
+}
+
+.btn--grey {
+    background-color: rgb(98, 98, 98);
+}
+
+.btn--grey:hover,
+.btn--grey:focus,
+.btn--grey:active {
+    background-color: rgb(55, 53, 53);
+}
+
+
+.puzzle__btns-container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.puzzle__container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.puzzle__tile,
+.puzzle__tile--empty {
+    position: absolute;
+    cursor: pointer;
+    /* width: 85px;
+    height: 85px; */
+    font-size: 20px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+
+    /* border: 1px solid grey; */
+    box-shadow: 
+    1px 0 0 0 #888, 
+    0 1px 0 0 #888, 
+    1px 1px 0 0 #888,   
+    1px 0 0 0 #888 inset, 
+    0 1px 0 0 #888 inset;
+}
+
+
+
+
+.puzzle__tile--empty {
+    font-size: 0;
+    background-color:  rgba(209, 188, 252, 0.4);
+    
+}
+
+
+
+.puzzle__link {
+    color: rgb(153, 125, 209);
+    transition: all .2s;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 10px;
+}
+
+.puzzle__link:hover,
+.puzzle__link:focus,
+.puzzle__link:active {
+    color:  rgb(112, 81, 174);
+    text-decoration: underline;
+}
+
+.puzzle__settings {
+    margin: 0 auto;
+    width: 450px;
+}
